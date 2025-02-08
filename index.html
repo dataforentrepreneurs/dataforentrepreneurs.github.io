@@ -8,180 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS for responsive layout -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Custom Styles -->
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    /* Animated Navigation Bar */
-    #navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-      transition: top 0.3s ease-in-out;
-    }
-    .navbar {
-      padding: 1rem;
-    }
-    .navbar-brand {
-      font-weight: 700;
-      font-size: 1.8rem;
-    }
-    .nav-link {
-      font-weight: 500;
-      color: #333 !important;
-    }
-    .nav-link:hover {
-      color: #007acc !important;
-    }
-    /* Hero Section */
-    .hero {
-      background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-      color: #fff;
-      text-align: center;
-      padding: 150px 20px;
-      position: relative;
-      margin-top: 80px; /* Offset for fixed navbar */
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 30px;
-    }
-    .btn-primary {
-      background-color: #007acc;
-      border: none;
-      padding: 12px 30px;
-      font-size: 1rem;
-      border-radius: 50px;
-      transition: background-color 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: #005fa3;
-    }
-    /* Section Headers */
-    .section-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    .section-header h2 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-    .section-header p {
-      font-size: 1.125rem;
-      color: #666;
-    }
-    /* About Section */
-    .about-section {
-      padding: 80px 20px;
-      background: #f9f9f9;
-    }
-    .about-section img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    /* Services Section */
-    .services-section {
-      padding: 80px 20px;
-    }
-    .service-box {
-      background: #fff;
-      border: 1px solid #eaeaea;
-      padding: 40px 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .service-box:hover {
-      transform: translateY(-5px);
-    }
-    .service-box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-    .service-box p {
-      color: #555;
-    }
-    /* Book Section */
-    .book-section {
-      padding: 80px 20px;
-      background: #f9f9f9;
-    }
-    .book-img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    /* Testimonials Section */
-    .testimonials-section {
-      padding: 80px 20px;
-      background: #fff;
-    }
-    .testimonial {
-      text-align: center;
-      padding: 30px;
-      margin: 15px;
-      border: 1px solid #eaeaea;
-      border-radius: 10px;
-      background: #f9f9f9;
-    }
-    .testimonial p {
-      font-style: italic;
-      color: #555;
-    }
-    .testimonial h5 {
-      margin-top: 15px;
-      font-weight: 700;
-    }
-    /* Contact Section */
-    .contact-section {
-      background: #007acc;
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .contact-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-    .contact-section p {
-      font-size: 1.125rem;
-      margin-bottom: 30px;
-    }
-    /* Footer */
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    footer a {
-      color: #007acc;
-    }
-  </style>
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -354,32 +182,14 @@
     <div class="container">
       <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
       <p>
-        Inspired by the innovative approaches at 
-        <a href="https://datapreneurs.com" target="_blank">DataPreneurs</a>, 
-        <a href="https://www.futurefounders.com" target="_blank">Future Founders</a>, and 
-        <a href="https://www.youthpreneurindia.in" target="_blank">Youthpreneur India</a>.
+        Links
+        <a href="https://linkedIn.com" target="_blank">linkedIn</a>, 
       </p>
     </div>
   </footer>
 
-    <!-- JavaScript for Animated Navigation Bar -->
-    <script>
-      // Track the previous scroll position
-      let prevScrollPos = window.pageYOffset;
-      window.addEventListener("scroll", function() {
-        const currentScrollPos = window.pageYOffset;
-        const navbar = document.getElementById("navbar");
-  
-        // If scrolling upward, show the navbar; if scrolling downward, hide it
-        if (prevScrollPos > currentScrollPos) {
-          navbar.style.top = "0";
-        } else {
-          navbar.style.top = "-80px"; // Adjust this value if your navbar height changes
-        }
-        prevScrollPos = currentScrollPos;
-      });
-    </script>
-
+  <!-- Custom JavaScript File -->
+  <script src="assets/js/script.js"></script>
   <!-- Bootstrap and jQuery Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
