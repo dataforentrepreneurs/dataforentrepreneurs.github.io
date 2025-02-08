@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Data for Entrepreneurs</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>About Nikhil Sahai</h1>
-    <p>Welcome! I’m Nikhil Sahai, a passionate entrepreneur and data enthusiast with a rich background (see my <a href="https://www.linkedin.com/in/nikhilsahai/" target="_blank">LinkedIn</a> and <a href="http://www.nikhilsahai.com" target="_blank">website</a>). My experience is detailed in my <a href="path/to/CV.pdf" target="_blank">CV</a>.</p>
-    <!-- Add more details as needed -->
-  </main>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Data for Entrepreneurs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="book.html">Book</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- About Content -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Nikhil Sahai</h2>
+        <p>A Visionary in Data and Entrepreneurship</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>
+            Nikhil Sahai is a seasoned entrepreneur, data enthusiast, and innovator who has dedicated his career to empowering startups with data‐driven strategies. With a robust background in data analytics, technology, and business strategy, Nikhil has built and scaled data solutions that help businesses unlock their full potential.
+          </p>
+          <p>
+            His journey is marked by a passion for transforming raw data into actionable insights, guiding entrepreneurs to make informed decisions that drive growth. With an unwavering commitment to innovation and excellence, Nikhil is at the forefront of the data revolution, inspiring the next generation of entrepreneurs.
+          </p>
+          <p>
+            Connect with Nikhil on <a href="https://www.linkedin.com/in/nikhilsahai/" target="_blank">LinkedIn</a> or visit his <a href="http://www.nikhilsahai.com" target="_blank">personal website</a> to learn more.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/about-img.jpg" alt="Nikhil Sahai" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
+      <p>
+        Inspired by the innovative approaches at 
+        <a href="https://datapreneurs.com" target="_blank">DataPreneurs</a>, 
+        <a href="https://www.futurefounders.com" target="_blank">Future Founders</a>, and 
+        <a href="https://www.youthpreneurindia.in" target="_blank">Youthpreneur India</a>.
+      </p>
+    </div>
   </footer>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
