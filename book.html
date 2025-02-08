@@ -1,99 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book - Data for Entrepreneurs</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Data for Entrepreneurs</h1>
-    <img src="assets/images/20250208_CoverPage.jpg" alt="Book Cover" />
-    <p><strong>Data for Entrepreneurs</strong> is a guide to help startups harness data to build robust foundations, pipelines, warehousing, dashboards, and analytics.</p>
-    
-    <h2>Table of Contents</h2>
-    <ul>
-      <li><strong>Introduction</strong>
-        <ul>
-          <li>Importance of Data</li>
-          <li>The Challenges Young Companies Face When Handling Data</li>
-          <li>Common Mistakes Startups Make with Data</li>
-          <li>Overview of the Book’s Approach and Benefits</li>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Data for Entrepreneurs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">Book</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-      </li>
-      <li><strong>Part I: Basic Data-Setup</strong>
-        <ul>
-          <li><strong>Chapter One: Building the Foundation</strong>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Book Content -->
+  <section class="book-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Data for Entrepreneurs</h2>
+        <p>Your Comprehensive Guide to Building a Data-Driven Startup</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/images/book-cover.jpg" alt="Data for Entrepreneurs Book Cover" class="book-img">
+        </div>
+        <div class="col-md-6">
+          <p>
+            <strong>Data for Entrepreneurs</strong> is designed to equip startups with the knowledge and tools needed to harness the power of data. Whether you're launching a new venture or scaling an existing operation, this book covers every aspect of building a robust data foundation.
+          </p>
+          <p>
+            Explore topics such as establishing data pipelines, setting up data warehousing, designing intuitive dashboards, and leveraging analytics to drive growth. With detailed chapters, real-life case studies, and actionable insights, this guide is an indispensable resource.
+          </p>
+          <a href="#toc" class="btn btn-primary">View Table of Contents</a>
+        </div>
+      </div>
+      
+      <!-- Table of Contents -->
+      <div id="toc" class="mt-5">
+        <div class="section-header">
+          <h2>Table of Contents</h2>
+        </div>
+        <ul class="list-unstyled">
+          <li><strong>Introduction</strong>
             <ul>
-              <li>1.1 Importance of Data for Startups</li>
-              <li>1.2 Defining Data Goals</li>
-              <li>1.3 Tools for Collecting, Organizing, and Visualizing Data</li>
-              <li>1.4 Framework for Collecting and Organizing Data</li>
-              <li>1.5 Case Study: A Startup That Leveraged Data Early</li>
-              <li>1.6 Action Plan: Setting Up Your Data Foundation</li>
-              <li>1.7 Conclusion: Building a Strong Data Foundation</li>
+              <li>Importance of Data</li>
+              <li>The Challenges Young Companies Face When Handling Data</li>
+              <li>Common Mistakes Startups Make with Data</li>
+              <li>Overview of the Book’s Approach and Benefits</li>
             </ul>
           </li>
-          <li><strong>Chapter Two: Building Data Pipelines</strong>
+          <li><strong>Part I: Basic Data-Setup</strong>
             <ul>
-              <li>2.1 Defining a Data Pipeline</li>
-              <li>2.2 Key Components of a Data Pipeline</li>
-              <li>2.3 Steps to Design a Basic Pipeline</li>
-              <li>2.4 Summary of Tools and Platforms</li>
-              <li>2.5 Avoiding Common Pipeline Pitfalls</li>
-              <li>2.6 Conclusion: Building Data Pipelines</li>
+              <li><strong>Chapter One: Building the Foundation</strong>
+                <ul>
+                  <li>1.1 Importance of Data for Startups</li>
+                  <li>1.2 Defining Data Goals</li>
+                  <li>1.3 Tools for Collecting, Organizing, and Visualizing Data</li>
+                  <li>1.4 Framework for Collecting and Organizing Data</li>
+                  <li>1.5 Case Study: A Startup That Leveraged Data Early</li>
+                  <li>1.6 Action Plan: Setting Up Your Data Foundation</li>
+                  <li>1.7 Conclusion: Building a Strong Data Foundation</li>
+                </ul>
+              </li>
+              <li><strong>Chapter Two: Building Data Pipelines</strong>
+                <ul>
+                  <li>2.1 Defining a Data Pipeline</li>
+                  <li>2.2 Key Components of a Data Pipeline</li>
+                  <li>2.3 Steps to Design a Basic Pipeline</li>
+                  <li>2.4 Summary of Tools and Platforms</li>
+                  <li>2.5 Avoiding Common Pipeline Pitfalls</li>
+                  <li>2.6 Conclusion: Building Data Pipelines</li>
+                </ul>
+              </li>
+              <li><strong>Chapter Three: Data Warehousing</strong>
+                <ul>
+                  <li>3.1 Introduction to Data Warehousing</li>
+                  <li>3.2 Importance of Data Warehousing</li>
+                  <li>3.3 Key Features of Data Warehousing</li>
+                  <li>3.4 Selecting the Right Data Warehouse</li>
+                  <li>3.5 Steps to Build a Data Warehouse</li>
+                  <li>3.6 Best Practices for Maintaining a Data Warehouse</li>
+                  <li>3.7 Conclusion: Building a Data Warehouse</li>
+                </ul>
+              </li>
+              <li><strong>Chapter Four: Building Dashboards and Reports</strong>
+                <ul>
+                  <li>4.1 Importance of Dashboards</li>
+                  <li>4.2 Principles of Effective Dashboard Design</li>
+                  <li>4.3 Selecting the Right Tools</li>
+                  <li>4.4 Building a Dashboard: Step-by-Step</li>
+                  <li>4.5 Automating Reports</li>
+                  <li>4.6 Best Practices for Dashboards and Reporting</li>
+                  <li>4.7 Conclusion</li>
+                </ul>
+              </li>
+              <li><strong>Chapter Five: Introduction to Data Analytics</strong>
+                <ul>
+                  <li>5.1 Fundamentals of Data Analytics</li>
+                  <li>5.2 The Role of Data Analytics</li>
+                  <li>5.3 The Data Analytics Process</li>
+                  <li>5.4 Challenges in Data Analytics</li>
+                  <li>5.5 Conclusion</li>
+                </ul>
+              </li>
+              <li>Chapter-Wise Summary</li>
             </ul>
           </li>
-          <li><strong>Chapter Three: Data Warehousing</strong>
-            <ul>
-              <li>3.1 Introduction to Data Warehousing</li>
-              <li>3.2 Importance of Data Warehousing</li>
-              <li>3.3 Key Features of Data Warehousing</li>
-              <li>3.4 Selecting the Right Data Warehouse</li>
-              <li>3.5 Steps to Build a Data Warehouse</li>
-              <li>3.6 Best Practices for Maintaining a Data Warehouse</li>
-              <li>3.7 Conclusion: Building a Data Warehouse</li>
-            </ul>
-          </li>
-          <li><strong>Chapter Four: Building Dashboards and Reports</strong>
-            <ul>
-              <li>4.1 Importance of Dashboards</li>
-              <li>4.2 Principles of Effective Dashboard Design</li>
-              <li>4.3 Selecting the Right Tools</li>
-              <li>4.4 Building a Dashboard: Step-by-Step</li>
-              <li>4.5 Automating Reports</li>
-              <li>4.6 Best Practices for Dashboards and Reporting</li>
-              <li>4.7 Conclusion</li>
-            </ul>
-          </li>
-          <li><strong>Chapter Five: Introduction to Data Analytics</strong>
-            <ul>
-              <li>5.1 Fundamentals of Data Analytics</li>
-              <li>5.2 The Role of Data Analytics</li>
-              <li>5.3 The Data Analytics Process</li>
-              <li>5.4 Challenges in Data Analytics</li>
-              <li>5.5 Conclusion</li>
-            </ul>
-          </li>
-          <li>Chapter-Wise Summary</li>
         </ul>
-      </li>
-    </ul>
-    <!-- Optionally, add a call-to-action button (e.g., Buy Now, Download Sample) -->
-  </main>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
+      <p>
+        Inspired by the innovative approaches at 
+        <a href="https://datapreneurs.com" target="_blank">DataPreneurs</a>, 
+        <a href="https://www.futurefounders.com" target="_blank">Future Founders</a>, and 
+        <a href="https://www.youthpreneurindia.in" target="_blank">Youthpreneur India</a>.
+      </p>
+    </div>
   </footer>
+  
+  <!-- Custom JavaScript -->
+  <script src="assets/js/script.js"></script>
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
