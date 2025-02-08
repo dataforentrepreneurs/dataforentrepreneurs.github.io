@@ -17,7 +17,14 @@
       padding: 0;
       line-height: 1.6;
     }
-    /* Navbar */
+    /* Animated Navigation Bar */
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      transition: top 0.3s ease-in-out;
+    }
     .navbar {
       padding: 1rem;
     }
@@ -39,6 +46,7 @@
       text-align: center;
       padding: 150px 20px;
       position: relative;
+      margin-top: 80px; /* Offset for fixed navbar */
     }
     .hero-overlay {
       position: absolute;
@@ -177,7 +185,7 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">Data for Entrepreneurs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -353,6 +361,24 @@
       </p>
     </div>
   </footer>
+
+    <!-- JavaScript for Animated Navigation Bar -->
+    <script>
+      // Track the previous scroll position
+      let prevScrollPos = window.pageYOffset;
+      window.addEventListener("scroll", function() {
+        const currentScrollPos = window.pageYOffset;
+        const navbar = document.getElementById("navbar");
+  
+        // If scrolling upward, show the navbar; if scrolling downward, hide it
+        if (prevScrollPos > currentScrollPos) {
+          navbar.style.top = "0";
+        } else {
+          navbar.style.top = "-80px"; // Adjust this value if your navbar height changes
+        }
+        prevScrollPos = currentScrollPos;
+      });
+    </script>
 
   <!-- Bootstrap and jQuery Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
