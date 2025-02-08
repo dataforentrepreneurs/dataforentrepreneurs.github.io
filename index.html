@@ -3,27 +3,359 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data for Entrepreneurs</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Data for Entrepreneurs | Empowering Startups with Data</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS for responsive layout -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    /* Navbar */
+    .navbar {
+      padding: 1rem;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+    .nav-link:hover {
+      color: #007acc !important;
+    }
+    /* Hero Section */
+    .hero {
+      background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 150px 20px;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+    .btn-primary {
+      background-color: #007acc;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #005fa3;
+    }
+    /* Section Headers */
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-header h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .section-header p {
+      font-size: 1.125rem;
+      color: #666;
+    }
+    /* About Section */
+    .about-section {
+      padding: 80px 20px;
+      background: #f9f9f9;
+    }
+    .about-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    /* Services Section */
+    .services-section {
+      padding: 80px 20px;
+    }
+    .service-box {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      padding: 40px 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+    .service-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .service-box p {
+      color: #555;
+    }
+    /* Book Section */
+    .book-section {
+      padding: 80px 20px;
+      background: #f9f9f9;
+    }
+    .book-img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    /* Testimonials Section */
+    .testimonials-section {
+      padding: 80px 20px;
+      background: #fff;
+    }
+    .testimonial {
+      text-align: center;
+      padding: 30px;
+      margin: 15px;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    .testimonial p {
+      font-style: italic;
+      color: #555;
+    }
+    .testimonial h5 {
+      margin-top: 15px;
+      font-weight: 700;
+    }
+    /* Contact Section */
+    .contact-section {
+      background: #007acc;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .contact-section p {
+      font-size: 1.125rem;
+      margin-bottom: 30px;
+    }
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a {
+      color: #007acc;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Data for Entrepreneurs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+           <li class="nav-item"><a class="nav-link" href="#book">Book</a></li>
+           <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Data for Entrepreneurs</h1>
-    <p>Empowering startups with data-driven strategies.</p>
-    <a href="book.html" class="btn">Discover the Book</a>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Empowering Startups with Data-Driven Strategies</h1>
+      <p>Transform your business with insights, actionable strategies, and a comprehensive guide for building robust data foundations.</p>
+      <a href="#book" class="btn btn-primary">Discover the Book</a>
+    </div>
   </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Nikhil Sahai</h2>
+        <p>Meet the visionary behind Data for Entrepreneurs</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>
+            I’m Nikhil Sahai, a passionate entrepreneur and data enthusiast dedicated to unlocking the potential of startups.
+            With a deep background in data analytics, technology, and business strategy, I help businesses harness the power of data to drive growth and innovation.
+            My journey includes developing cutting-edge data solutions and guiding entrepreneurs through the ever-evolving digital landscape.
+          </p>
+          <p>
+            Discover more about my professional journey on 
+            <a href="https://www.linkedin.com/in/nikhilsahai/" target="_blank">LinkedIn</a> or visit my 
+            <a href="http://www.nikhilsahai.com" target="_blank">personal website</a>.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/about-img.jpg" alt="Nikhil Sahai" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Expertise</h2>
+        <p>Delivering data solutions that power your startup’s success</p>
+      </div>
+      <div class="row">
+        <!-- Service Box 1 -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <h3>Data Strategy Consulting</h3>
+            <p>
+              Craft tailored data strategies that align with your business objectives.
+              We help startups understand data potentials and build a clear roadmap for success.
+            </p>
+          </div>
+        </div>
+        <!-- Service Box 2 -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <h3>Data Infrastructure Setup</h3>
+            <p>
+              From data pipelines to warehousing and dashboard design, get comprehensive support in setting up the technical backbone your business needs.
+            </p>
+          </div>
+        </div>
+        <!-- Service Box 3 -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <h3>Analytics & Insights</h3>
+            <p>
+              Leverage cutting-edge analytics to extract actionable insights. Turn raw data into powerful decisions that drive growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Section -->
+  <section id="book" class="book-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Data for Entrepreneurs</h2>
+        <p>Your comprehensive guide to building a data-centric startup</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/images/book-cover.jpg" alt="Data for Entrepreneurs Book Cover" class="book-img">
+        </div>
+        <div class="col-md-6">
+          <p>
+            Our flagship book, <strong>Data for Entrepreneurs</strong>, is designed to equip startups with the knowledge and tools required to harness the power of data. 
+            From establishing a robust data foundation to building advanced pipelines, warehousing, dashboards, and analytics, this book covers it all.
+          </p>
+          <p>
+            With detailed chapters, real-life case studies, and actionable insights, the book is a must-read for anyone looking to transform their business with data.
+          </p>
+          <a href="book.html" class="btn btn-primary">Explore the Book</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Testimonials</h2>
+        <p>Hear what industry leaders and entrepreneurs are saying</p>
+      </div>
+      <div class="row">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Nikhil’s approach to data strategy is revolutionary. Our startup has seen tangible improvements in our decision-making process."</p>
+            <h5>— Alex R., CEO</h5>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"The book is a comprehensive guide that demystifies data for entrepreneurs. It’s now our go-to resource for building a data-driven culture."</p>
+            <h5>— Priya S., Founder</h5>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"From consulting to execution, the expertise provided by Nikhil has been instrumental in our growth and innovation."</p>
+            <h5>— Michael T., Data Analyst</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Call-to-Action Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Let’s Connect</h2>
+      <p>Have questions or ready to transform your startup with data? Reach out today and let’s start the conversation.</p>
+      <a href="mailto:your.email@example.com" class="btn btn-light">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
+      <p>
+        Inspired by the innovative approaches at 
+        <a href="https://datapreneurs.com" target="_blank">DataPreneurs</a>, 
+        <a href="https://www.futurefounders.com" target="_blank">Future Founders</a>, and 
+        <a href="https://www.youthpreneurindia.in" target="_blank">Youthpreneur India</a>.
+      </p>
+    </div>
   </footer>
+
+  <!-- Bootstrap and jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
