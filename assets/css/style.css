@@ -199,13 +199,13 @@ footer {
   padding: 30px 20px;
 }
 
-footer a {
-  color: #007acc;
-}
-
 footer .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+footer a {
+  color: #007acc;
 }
 
 footer p {
@@ -221,6 +221,7 @@ footer .social-links a {
 footer .social-icon {
   width: 24px;
   height: 24px;
+  object-fit: contain;
   vertical-align: middle;
   transition: transform 0.3s ease;
 }
