@@ -55,6 +55,11 @@
               <label for="message">Message</label>
               <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
             </div>
+            <!-- Hidden honeypot field for spam protection -->
+            <div style="display:none;">
+              <label for="honeypot">Leave this field blank</label>
+              <input type="text" id="honeypot" name="honeypot">
+            </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
