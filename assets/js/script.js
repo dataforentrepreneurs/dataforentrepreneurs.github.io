@@ -28,6 +28,10 @@ if (button) {
     offsetX = e.clientX - button.getBoundingClientRect().left;
     offsetY = e.clientY - button.getBoundingClientRect().top;
     button.style.transition = "none";
+
+    // Important: clear right/bottom so left/top works during drag
+    button.style.right = "auto";
+    button.style.bottom = "auto";
   });
 
   document.addEventListener("mousemove", function (e) {
