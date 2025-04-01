@@ -225,9 +225,9 @@ body {
 
 .pulse-button {
   animation: pulse 2.5s infinite ease-in-out;
-  position: fixed; /* KEEP fixed this time to detach from page flow */
-  left: 20px;
-  top: 80%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   width: 64px;
   height: 64px;
   background: none;
