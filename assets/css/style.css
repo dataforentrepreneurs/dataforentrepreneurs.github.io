@@ -225,17 +225,21 @@ body {
 
 .pulse-button {
   animation: pulse 2.5s infinite ease-in-out;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: fixed; /* KEEP fixed this time to detach from page flow */
+  left: 20px;
+  top: 80%;
   width: 64px;
   height: 64px;
   background: none;
   border: none;
   border-radius: 50%;
   padding: 0;
-  cursor: move; /* shows grab cursor */
+  cursor: grab;
   z-index: 99999;
+}
+
+.pulse-button:active {
+  cursor: grabbing;
 }
 
 .pulse-button img {
