@@ -227,7 +227,9 @@ body {
   animation: pulse 2.5s infinite ease-in-out;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 20px;     /* 🟢 Default to bottom-right */
+  left: auto;      /* 🔴 Make sure left is not interfering */
+  top: auto;       /* 🔴 Avoid auto-top shifts */
   width: 64px;
   height: 64px;
   background: none;
