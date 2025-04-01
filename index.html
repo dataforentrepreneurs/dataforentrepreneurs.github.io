@@ -200,10 +200,24 @@
 
   <!-- Chatbot iframe (initially hidden) -->
   <iframe
-    id="chatbot-frame"
-    src="https://chat.dataforentrepreneurs.com"
-    style="position: fixed; bottom: 100px; right: 20px; width: 400px; height: 540px; border: none; border-radius: 20px; box-shadow: 0 12px 28px rgba(0,0,0,0.3); z-index: 99998; display: none; background: white; overflow: hidden;">
-  </iframe>
+  id="chatbot-frame"
+  src="https://chat.dataforentrepreneurs.com"
+  style="
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height: 80vh; /* 📏 Use viewport height instead of fixed px */
+    max-height: 600px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+    z-index: 99998;
+    display: none;
+    background: white;
+    overflow: hidden;
+  ">
+</iframe>
 
   <button
     id="chatbot-drag-button"
