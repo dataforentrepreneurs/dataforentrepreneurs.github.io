@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.dataforentrepreneurs.com/</loc>
+    <lastmod>2025-06-13</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dataforentrepreneurs.com/about.html</loc>
+    <lastmod>2025-06-13</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dataforentrepreneurs.com/book.html</loc>
+    <lastmod>2025-06-13</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dataforentrepreneurs.com/book.html#basic_data_setup_book</loc>
+    <lastmod>2025-06-13</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dataforentrepreneurs.com/book.html#ai_chatbot_build_book</loc>
+    <lastmod>2025-06-13</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.dataforentrepreneurs.com/contact.html</loc>
+    <lastmod>2025-06-13</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
