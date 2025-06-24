@@ -1,108 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us - Data for Entrepreneurs</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <link rel="shortcut icon" href="assets/images/icon/favicon.ico" type="image/x-icon"/>
-</head>
-<body>
-
-<!-- Navigation (copied from index.html for consistency) -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+ <head>
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-X4DDFJ95FQ">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X4DDFJ95FQ');
+  </script>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Data for Entrepreneurs | Empowering Startups with Data
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" rel="stylesheet"/>
+  <!-- Bootstrap CSS for responsive layout -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Custom CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <!-- Favicon -->
+  <link href="assets/images/icon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="assets/images/icon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="assets/images/icon/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="assets/images/icon/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+ </head>
+ <body>
+  <nav aria-label="Main Navigation" class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" role="navigation">
+   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="assets/images/d4e_logo.png" alt="Data for Entrepreneurs Logo" style="height: 50px; margin-right: 10px;">
-      <div>
-        <div style="font-weight: 700;">Data for Entrepreneurs</div>
-        <div style="font-size: 0.75rem;">Practical Data Strategies for Startups</div>
+     <img alt="Data for Entrepreneurs Logo" src="assets/images/d4e_logo.png" style="height: 50px; margin-right: 10px;"/>
+     <div>
+      <div style="font-weight: 700;">
+       Data for Entrepreneurs
       </div>
+      <div style="font-size: 0.75rem; line-height: 1;">
+       Practical Data Strategies for Startups
+      </div>
+     </div>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+     <ul class="navbar-nav">
+      <li class="nav-item active">
+       <a class="nav-link" href="#">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="about.html">
+        About
+       </a>
+      </li>
+      <li class="nav-item dropdown">
+       <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="resources.html" id="bookDropdown" role="button">
+        Resources
+       </a>
+       <div aria-labelledby="bookDropdown" class="dropdown-menu">
+        <a class="dropdown-item" href="resources.html#basic_data_setup_book">
+         [Book] Part 1: Basic Data Setup
+        </a>
+        <a class="dropdown-item" href="resources.html#build_ai_chatbot_book">
+         [Book] AI Chatbot Builder’s Guide
+        </a>
+        <a class="dropdown-item" href="resources.html#build_ai_chatbot_at_no_invest">
+         [Video] Build AI Chatbot at $0 Investment
+        </a>
+       </div>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="contact.html">
+        Contact
+       </a>
+      </li>
+     </ul>
     </div>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero text-center py-5 bg-light">
-  <div class="container">
-    <h1 class="display-4">About Data for Entrepreneurs</h1>
-    <p class="lead">Empowering startups with data strategies that scale</p>
-  </div>
-</section>
-
-<!-- About Section -->
-<section class="py-5">
-  <div class="container">
-    <h2>Who We Are</h2>
+   </div>
+  </nav>
+  <section class="hero text-center py-5 bg-light">
+   <div class="container">
+    <h1 class="display-4">
+     About Data for Entrepreneurs
+    </h1>
+    <p class="lead">
+     Empowering startups with data strategies that scale
+    </p>
+   </div>
+  </section>
+  <section class="py-5">
+   <div class="container">
+    <h2>
+     Who We Are
+    </h2>
     <p>
-      <strong>Data for Entrepreneurs</strong> is a platform dedicated to helping startups, small businesses, and emerging founders make smarter decisions through data. Founded with the vision of bridging the gap between early-stage companies and enterprise-grade data solutions, we provide books, consulting, and AI tools tailored for entrepreneurs.
+     <strong>
+      Data for Entrepreneurs
+     </strong>
+     is a platform dedicated to helping startups, small businesses, and emerging founders make smarter decisions through data.
     </p>
     <p>
-      From setting up your first data pipeline to building intelligent chatbots, we guide you every step of the way — with simplicity, clarity, and startup-friendly strategies.
+     We provide books, consulting services, and AI tools that enable founders to build foundational data systems and production-ready chatbots using open-source technologies.
     </p>
-  </div>
-</section>
-
-<!-- What We Do Section -->
-<section class="bg-light py-5">
-  <div class="container">
-    <h2>What We Offer</h2>
+   </div>
+  </section>
+  <section class="bg-light py-5">
+   <div class="container">
+    <h2>
+     What We Offer
+    </h2>
     <ul>
-      <li>📘 Step-by-step guides on foundational and advanced data setups</li>
-      <li>🤖 AI chatbot building frameworks using LLMs, RAG, FastAPI & Google Cloud</li>
-      <li>📊 Strategic consulting for startup founders and data teams</li>
-      <li>🎓 Educational content through books, videos, and mentorship</li>
+     <li>
+      📘 Step-by-step startup-focused data guides
+     </li>
+     <li>
+      🤖 AI chatbot playbooks and videos
+     </li>
+     <li>
+      🧠 1:1 consulting for founders &amp; teams
+     </li>
+     <li>
+      📈 Templates, frameworks, and real-world strategies
+     </li>
     </ul>
-  </div>
-</section>
-
-<!-- Why Choose Us Section -->
-<section class="py-5">
-  <div class="container">
-    <h2>Why Choose Us?</h2>
-    <p>Because we’ve been in your shoes. Our work is:</p>
-    <ul>
-      <li><strong>Practical:</strong> No fluff, just actionable insights you can use today</li>
-      <li><strong>Affordable:</strong> Free videos, low-cost tools, and open-source tech</li>
-      <li><strong>Scalable:</strong> Designed to grow with your startup’s journey</li>
-      <li><strong>Founder-Led:</strong> Created by an experienced data leader who understands startups inside out</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Call to Action -->
-<section class="text-center py-5 bg-dark text-white">
-  <div class="container">
-    <h2>Ready to Empower Your Startup with Data?</h2>
-    <p>Explore our free resources or book a 1:1 consultation to get started.</p>
-    <a href="resources.html" class="btn btn-primary m-2">Explore Resources</a>
-    <a href="contact.html" class="btn btn-outline-light m-2">Contact Us</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="text-center py-4">
-  <div class="container">
-    <p>© 2025 Data for Entrepreneurs. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
-
-</body>
+   </div>
+  </section>
+  <section class="text-center py-5 bg-dark text-white">
+   <div class="container">
+    <h2>
+     Ready to Empower Your Startup with Data?
+    </h2>
+    <p>
+     Explore our books, videos, or book a 1:1 consultation today.
+    </p>
+    <a class="btn btn-primary m-2" href="resources.html">
+     Explore Resources
+    </a>
+    <a class="btn btn-outline-light m-2" href="contact.html">
+     Contact Us
+    </a>
+   </div>
+  </section>
+  <footer role="contentinfo">
+   <div class="container text-center">
+    <p>
+     © 2025 Data for Entrepreneurs. All rights reserved.
+    </p>
+    <div class="social-links">
+     <a href="https://x.com/dataforeps" rel="noopener noreferrer" target="_blank">
+      <img alt="Follow us on X (formerly Twitter)" class="social-icon" src="assets/images/x-logo-white.png"/>
+     </a>
+     <a href="https://github.com/dataforentrepreneurs" rel="noopener noreferrer" target="_blank">
+      <img alt="Visit our GitHub" class="social-icon" src="assets/images/github-mark-white.png"/>
+     </a>
+     <a href="https://www.linkedin.com/company/data-for-entrepreneurs" rel="noopener noreferrer" target="_blank">
+      <img alt="Connect on LinkedIn" class="social-icon" src="assets/images/LI-In-Bug.png"/>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
