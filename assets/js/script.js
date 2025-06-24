@@ -85,4 +85,33 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", next);
   });
 });
+// ------------------------------
+// Touch Drag Support for Chatbot Button
+// ------------------------------
+let touchStartX, touchStartY;
+function startTouchDrag(e) {
+  const touch = e.touches[0];
+  touchStartX = touch.clientX - e.target.offsetLeft;
+  touchStartY = touch.clientY - e.target.offsetTop;
+}
+function dragButtonTouch(e) {
+  e.preventDefault();
+  const touch = e.touches[0];
+  const button = document.getElementById('chatbot-drag-button');
+  button.style.left = `${touch.clientX - touchStartX}px`;
+  button.style.top = `${touch.clientY - touchStartY}px`;
+}
 
+// ------------------------------
+// Highlight Active Nav Item
+// ------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".nav-item a").forEach((link) => {
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+});
