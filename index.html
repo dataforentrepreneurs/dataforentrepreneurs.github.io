@@ -14,6 +14,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data for Entrepreneurs | Empowering Startups with Data</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS for responsive layout -->
@@ -21,29 +22,50 @@
   <!-- Custom CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/images/icon/apple-touch-icon.png">
+  
   <link rel="shortcut icon" href="assets/images/icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light" role="navigation" aria-label="Main Navigation">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="assets/images/d4e_logo.png" alt="Data for Entrepreneurs Logo" style="height: 50px;">
-      Data for Entrepreneurs</a>
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/d4e_logo.png" alt="Data for Entrepreneurs Logo" style="height: 50px; margin-right: 10px;">
+        <div>
+          <div style="font-weight: 700;">Data for Entrepreneurs</div>
+          <div style="font-size: 0.75rem; line-height: 1;">Practical Data Strategies for Startups</div>
+        </div>
+      </a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
          <ul class="navbar-nav">
            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-           <li class="nav-item"><a class="nav-link" href="book.html">Book</a></li>
+           <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="book.html" id="bookDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Book
+              </a>
+              <div class="dropdown-menu" aria-labelledby="bookDropdown">
+                <a class="dropdown-item" href="book.html#part1">Part 1: Basic Data Setup</a>
+                <a class="dropdown-item" href="book.html#part2">Part 2: AI Chatbot Builder’s Guide</a>
+              </div>
+            </li>
            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
          </ul>
       </div>
+      
     </div>
   </nav>
 
+  <main>
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-overlay"></div>
@@ -87,7 +109,7 @@
       <div class="row">
         <!-- Service Box 1 -->
         <div class="col-md-4">
-          <div class="service-box">
+          <div class="service-box text-center"><div><i class="fas fa-lightbulb fa-2x mb-3 text-primary"></i></div>
             <h3>Data Strategy Consulting</h3>
             <p>
               Develop a clear, actionable data strategy that aligns with your business objectives. We help you uncover opportunities and plan for sustainable growth.
@@ -96,7 +118,7 @@
         </div>
         <!-- Service Box 2 -->
         <div class="col-md-4">
-          <div class="service-box">
+          <div class="service-box text-center"><div><i class="fas fa-database fa-2x mb-3 text-primary"></i></div>
             <h3>Data Infrastructure Setup</h3>
             <p>
               From data pipelines and warehousing to dashboard design, we build the technical foundation your startup needs to excel in a data-driven world.
@@ -105,7 +127,7 @@
         </div>
         <!-- Service Box 3 -->
         <div class="col-md-4">
-          <div class="service-box">
+          <div class="service-box text-center"><div><i class="fas fa-chart-line fa-2x mb-3 text-primary"></i></div>
             <h3>Analytics & Insights</h3>
             <p>
               Turn raw data into actionable insights. Our advanced analytics solutions empower you to make informed decisions that propel your business forward.
@@ -184,19 +206,21 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
-  <footer>
+  <footer role="contentinfo">
     <div class="container text-center">
       <p>&copy; 2025 Data for Entrepreneurs. All rights reserved.</p>
       <div class="social-links">
         <a href="https://x.com/dataforeps" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/x-logo-white.png" alt="X" class="social-icon">
+          <img src="assets/images/x-logo-white.png" alt="Follow us on X (formerly Twitter)" class="social-icon">
         </a>
         <a href="https://github.com/dataforentrepreneurs" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/github-mark-white.png" alt="GitHub" class="social-icon">
+          <img src="assets/images/github-mark-white.png" alt="Visit our GitHub" class="social-icon">
         </a>
         <a href="https://www.linkedin.com/company/data-for-entrepreneurs" target="_blank" rel="noopener noreferrer">
-          <img src="assets/images/LI-In-Bug.png" alt="LinkedIn" class="social-icon">
+          <img src="assets/images/LI-In-Bug.png" alt="Connect on LinkedIn" class="social-icon">
         </a>
       </div>
     </div>
@@ -230,11 +254,11 @@
 </iframe>
 
   <button
-    id="chatbot-drag-button"
+    id="chatbot-drag-button" aria-label="Chat with Nikhil" ontouchstart="startTouchDrag(event)" ontouchmove="dragButtonTouch(event)"
     class="pulse-button"
     onclick="document.getElementById('chatbot-frame').style.display = document.getElementById('chatbot-frame').style.display === 'none' ? 'block' : 'none';"
   >
-    <img src="https://chat.dataforentrepreneurs.com/nikbot2.png" alt="Chat with Nikhil" />
+    <img src="https://chat.dataforentrepreneurs.com/nikbot2.png" alt="Open AI Chatbot by Nikhil" />
   </button>
 
 </body>
