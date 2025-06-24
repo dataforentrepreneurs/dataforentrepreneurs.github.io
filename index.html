@@ -50,12 +50,13 @@
            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="book.html" id="bookDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Book
+              <a class="nav-link dropdown-toggle" href="resources.html" id="bookDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
               </a>
               <div class="dropdown-menu" aria-labelledby="bookDropdown">
-                <a class="dropdown-item" href="book.html#part1">Part 1: Basic Data Setup</a>
-                <a class="dropdown-item" href="book.html#part2">Part 2: AI Chatbot Builder’s Guide</a>
+                <a class="dropdown-item" href="resources.html#part1">[Book] Part 1: Basic Data Setup</a>
+                <a class="dropdown-item" href="resources.html#part2">[Book] Part 2: AI Chatbot Builder’s Guide</a>
+                <a class="dropdown-item" href="resources.html#part3">[Video] Build AI Chatbot at $0 Investment</a>
               </div>
             </li>
            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -72,7 +73,7 @@
     <div class="container hero-content text-center">
       <h1>Empowering Startups with Data-Driven Strategies</h1>
       <p>Transform your business with actionable insights and innovative data solutions. Unlock your startup’s true potential.</p>
-      <a href="book.html" class="btn btn-primary">Discover Our Book</a>
+      <a href="resources.html" class="btn btn-primary">Discover Our Book</a>
     </div>
   </section>
 
@@ -138,41 +139,67 @@
     </div>
   </section>
 
-  <!-- Featured Resources Section -->
+  <!-- Featured Book Section -->
   
-
-  <section id="featured-resources" class="book-section py-5">
+<section id="featured-resources" class="book-section py-5">
   <div class="container">
     <div class="section-header text-center">
       <h2>Featured Resources</h2>
       <p>Books and Videos to Help You Build Data-Driven Startups</p>
     </div>
-    
-    <div class="row">
-      <!-- Book 1 -->
-      <div class="col-md-4 text-center">
-        <img src="assets/images/book1-cover.jpg" alt="Basic Data Setup Guide Cover" class="book-img mb-3">
-        <h4>Part 1: Basic Data Setup Guide</h4>
-        <p>Learn how to build your data foundation, pipelines, and dashboards from scratch.</p>
-        <a href="book.html#part1" class="btn btn-primary">Explore Book 1</a>
+    <div class="row justify-content-center">
+      <!-- Flip Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/book1-cover.jpg" alt="Basic Data Setup Guide" class="book-img">
+              <h4 class="mt-3">Part 1: Basic Data Setup Guide</h4>
+            </div>
+            <div class="flip-card-back">
+              <h5>Set Up Your Data Foundations</h5>
+              <p>Build clean pipelines, dashboards, and your startup’s analytics core from scratch.</p>
+              <a href="resources.html#part1" class="btn btn-light">Explore Book 1</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Book 2 -->
-      <div class="col-md-4 text-center">
-        <img src="assets/images/book2-cover.jpg" alt="AI Chatbot Builder's Guide Cover" class="book-img mb-3">
-        <h4>Part 2: AI Chatbot Builder’s Guide</h4>
-        <p>Step-by-step guide to building AI chatbots using LLM, RAG, and FastAPI — without vendor lock-in.</p>
-        <a href="book.html#part2" class="btn btn-primary">Explore Book 2</a>
+      <!-- Flip Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/book2-cover.jpg" alt="AI Chatbot Builder's Guide" class="book-img">
+              <h4 class="mt-3">Part 2: AI Chatbot Builder’s Guide</h4>
+            </div>
+            <div class="flip-card-back">
+              <h5>Build Your Own Chatbot</h5>
+              <p>End-to-end guide for creating LLM + RAG-based chatbots — no third-party tools needed.</p>
+              <a href="resources.html#part2" class="btn btn-light">Explore Book 2</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Video -->
-      <div class="col-md-4 text-center">
-        <img src="assets/images/video-thumbnail.jpg" alt="AI Chatbot Video Thumbnail" class="book-img mb-3">
-        <h4>Free Explainer Video</h4>
-        <p>Watch our video walkthrough on building a professional-grade AI chatbot at $0 cost.</p>
-        <a href="https://www.youtube.com/watch?v=NofI0hwgRxc" target="_blank" class="btn btn-primary">Watch Now</a>
+      <!-- Flip Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/images/video-thumbnail.jpg" alt="AI Chatbot Explainer Video" class="book-img">
+              <h4 class="mt-3">Free Explainer Video</h4>
+            </div>
+            <div class="flip-card-back">
+              <h5>AI Chatbot at $0</h5>
+              <p>Watch our practical walkthrough to build an AI chatbot using free-tier tools.</p>
+              <a href="https://www.youtube.com/watch?v=NofI0hwgRxc" target="_blank" class="btn btn-light">Watch Now</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </section>
+</section>
+
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials-section py-5">
