@@ -117,35 +117,37 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ------------------------------
-// Adding Clickable timestamp to the video
+// Adding Clickable Timestamp to the Video
 // ------------------------------
 
-<script>
-  // YouTube Iframe API Setup
-  let player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('chatbot-video');
-  }
+// Load the YouTube iframe API
+const tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(tag);
 
-  // Load the YouTube iframe API asynchronously
-  const tag = document.createElement('script');
-  tag.src = "https://www.youtube.com/iframe_api";
-  document.head.appendChild(tag);
+// Set up YouTube Player
+let player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('chatbot-video');
+}
 
-  // Listen for clicks on timestamp links
-  document.addEventListener('DOMContentLoaded', () => {
-    const chapterLinks = document.querySelectorAll('#video-chapters a');
+// Add click events to timestamps
+document.addEventListener('DOMContentLoaded', () => {
+  const chapterLinks = document.querySelectorAll('#video-chapters a');
 
-    chapterLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const time = parseInt(this.getAttribute('data-time'), 10);
-        if (player && typeof player.seekTo === 'function') {
-          player.seekTo(time, true);
-          player.playVideo();
-        }
-      });
+  chapterLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const time = parseInt(this.getAttribute('data-time'), 10);
+      if (player && typeof player.seekTo === 'function') {
+        player.seekTo(time, true);
+        player.playVideo();
+      } else {
+        // Optional fallback if API isn't ready
+        const iframe = document.getElementById("chatbot-video");
+        const base = "https://www.youtube.com/embed/NofI0hwgRxc";
+        iframe.src = `${base}?enablejsapi=1&start=${time}&autoplay=1`;
+      }
     });
   });
-</script>
-
+});
