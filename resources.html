@@ -101,8 +101,10 @@
      </p>
     </div>
     <div class="container">
-     <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="650" src="https://www.youtube.com/embed/NofI0hwgRxc" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" title="Build Your Own AI Chatbotr" width="100%">
+     <iframe id="chatbot-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" width="100%" height="400" 
+      src="https://www.youtube.com/embed/NofI0hwgRxc?enablejsapi=1" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" title="Build Your Own AI Chatbotr" >
      </iframe>
+
     </div>
     <section class="video-details" style="padding: 60px 20px; background-color: #f9f9f9;">
      <div class="container" style="max-width: 960px; margin: 0 auto;">
@@ -154,32 +156,34 @@
    
        <h3 style="margin-bottom: 1rem;">🕒 Video Chapters</h3>
        <pre style="white-space: pre-wrap; font-family: 'Courier New', monospace; background: #fff; border: 1px solid #ddd; padding: 1rem; border-radius: 6px; overflow-x: auto;">
-         00:00 Introduction
-         01:12 Key reason to stick around
-         01:56 (Chapter 1) Foundation
-         02:13 Purpose
-         02:32 Strategy
-         03:12 Core concepts
-         04:20 High-level view
-         05:17 (Chapter 2) Backend Integration
-         05:40 FastAPI Setup
-         06:40 RAG Setup with Pinecone
-         08:59 LLM Setup
-         09:52 Injecting RAG Context into LLM
-         10:35 Fallback Strategy Overview
-         12:17 (Chapter 3) Cloud Deployment with GCP
-         13:01 Dockerizing Your FastAPI App
-         13:57 Pushing Docker Image to Google Artifact Registry
-         14:08 Deploying to Google Cloud Run
-         15:00 Testing the Deployed Endpoint
-         15:50 Optional Add-ons
-         17:00 (Chapter 4) Frontend Integration (React)
-         17:06 Where should you place your chatbot
-         17:48 Choosing the right frontend stack
-         18:43 React Demo
-         21:07 (Chapter 5) Wrap-Up
-         21:10 Recap
-         21:32 What’s Next
+         <ul id="video-chapters" style="list-style: none; font-family: 'Courier New', monospace; font-size: 1rem; line-height: 1.8;">
+           <li><strong><a href="#" data-time="0">00:00 Introduction</a></strong></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="72">01:12 Key reason to stick around</a></li>
+           <li><strong><a href="#" data-time="116">01:56 (Chapter 1) Foundation</a></strong></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="133">02:13 Purpose</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="152">02:32 Strategy</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="192">03:12 Core concepts</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="260">04:20 High-level view</a></li>
+           <li><strong><a href="#" data-time="317">05:17 (Chapter 2) Backend Integration</a></strong></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="340">05:40 FastAPI Setup</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="400">06:40 RAG Setup with Pinecone</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="539">08:59 LLM Setup</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="592">09:52 Injecting RAG Context into LLM</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="635">10:35 Fallback Strategy Overview</a></li>
+           <li><strong><a href="#" data-time="737">12:17 (Chapter 3) Cloud Deployment with GCP</a></strong></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="781">13:01 Dockerizing Your FastAPI App</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="837">13:57 Pushing Docker Image to Google Artifact Registry</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="848">14:08 Deploying to Google Cloud Run</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="900">15:00 Testing the Deployed Endpoint</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="950">15:50 Optional Add-ons</a></li>
+           <li><strong><a href="#" data-time="1020">17:00 (Chapter 4) Frontend Integration (React)</a></strong></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="1026">17:06 Where should you place your chatbot</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="1068">17:48 Choosing the right frontend stack</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="1123">18:43 React Demo</a></li>
+           <li><strong><a href="#" data-time="1267">21:07 (Chapter 5) Wrap-Up</a></strong></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="1270">21:10 Recap</a></li>
+           <li style="padding-left: 1.5em;"><a href="#" data-time="1292">21:32 What’s Next</a></li>
+         </ul>
        </pre>
    
        <h3 style="margin-top: 2rem;">🔗 Useful Links</h3>
