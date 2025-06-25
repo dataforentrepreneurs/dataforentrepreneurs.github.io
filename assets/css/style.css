@@ -360,7 +360,7 @@ h1, h2, h3 {
   font-size: 1rem;
 }
 
-
+/* Flip cards on index.html */
 .flip-card {
   background-color: transparent;
   width: 100%;
@@ -415,66 +415,67 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* ------------------------------
-   Dark Mode Fixes for Better Visibility
------------------------------- */
-[data-theme='dark'] {
-  background-color: #121212;
-  color: #f0f0f0;
+/* Video Clickable chapters */
+.chapter-strip-container {
+  overflow-x: auto;
+  padding: 10px 0;
+  margin: 40px 0 20px;
 }
 
-[data-theme='dark'] .hero,
-[data-theme='dark'] .about-section,
-[data-theme='dark'] .services-section,
-[data-theme='dark'] .book-section,
-[data-theme='dark'] .testimonials-section,
-[data-theme='dark'] .contact-section {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+#youtube-style-chapters {
+  display: flex;
+  gap: 16px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
 }
 
-[data-theme='dark'] .chapter-strip-container {
-  background-color: #1c1c1c;
+.chapter-card {
+  flex: 0 0 auto;
+  width: 160px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
-[data-theme='dark'] .chapter-card {
-  background-color: #2b2b2b;
-  color: #fff;
-  border: 1px solid #444;
+.chapter-card:hover {
+  transform: scale(1.03);
 }
 
-[data-theme='dark'] .chapter-card .chapter-info span {
-  color: #ddd;
+.chapter-card img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  display: block;
 }
 
-[data-theme='dark'] .section-header h2,
-[data-theme='dark'] .section-header p,
-[data-theme='dark'] h1,
-[data-theme='dark'] h2,
-[data-theme='dark'] h3,
-[data-theme='dark'] h4,
-[data-theme='dark'] p,
-[data-theme='dark'] li {
-  color: #eaeaea;
+.chapter-info {
+  padding: 8px;
+  font-size: 0.85rem;
 }
 
-[data-theme='dark'] .btn-primary {
-  background-color: #2196f3;
+.chapter-time {
+  font-weight: bold;
+  color: #007acc;
+  display: block;
+  margin-bottom: 2px;
 }
 
-[data-theme='dark'] .btn-primary:hover {
-  background-color: #1e88e5;
+.chapter-title {
+  color: #333;
+  line-height: 1.2;
 }
 
-[data-theme='dark'] footer {
-  background-color: #111;
-  color: #ccc;
+/* Dark theme override */
+[data-theme="dark"] .chapter-card {
+  background: #222;
+  color: #e0e0e0;
+}
+[data-theme="dark"] .chapter-time {
+  color: var(--highlight);
 }
 
-[data-theme='dark'] .chapter-strip-container::-webkit-scrollbar {
-  background: #111;
-}
-
-[data-theme='dark'] .chapter-strip-container::-webkit-scrollbar-thumb {
-  background-color: #444;
-}
+/* End of Video clickable chapters */
