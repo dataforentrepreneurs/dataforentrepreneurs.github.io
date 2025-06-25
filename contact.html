@@ -141,5 +141,17 @@
   <!-- Bootstrap and jQuery Scripts -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Chatbot iframe -->
+  <iframe id="chatbot-frame" src="https://chat.dataforentrepreneurs.com" style="position: fixed; bottom: 80px; right: 20px; width: 400px; height: 80vh; max-height: 600px;
+         border: none; border-radius: 20px; box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+         z-index: 99998; display: none; background: white; overflow: hidden;">
+  </iframe>
+  <!-- Floating Chatbot Button -->
+  <button aria-label="Chat with Nikhil" class="pulse-button" id="chatbot-drag-button" onclick="document.getElementById('chatbot-frame').style.display =
+                 document.getElementById('chatbot-frame').style.display === 'none' ? 'block' : 'none';" ontouchmove="dragButtonTouch(event)" ontouchstart="startTouchDrag(event)">
+   <img alt="Open AI Chatbot by Nikhil" src="https://chat.dataforentrepreneurs.com/nikbot2.png"/>
+  </button>
+  
 </body>
 </html>
