@@ -127,9 +127,36 @@ document.head.appendChild(tag);
 
 // Set up YouTube Player
 let player;
+
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('chatbot-video');
+  player = new YT.Player('chatbot-video', {
+    events: {
+      onReady: () => {
+        console.log("✅ YouTube Player Ready");
+
+        // Enable chapter cards click binding *after* player is ready
+        const chapterCards = document.querySelectorAll('.chapter-card');
+        chapterCards.forEach(card => {
+          card.addEventListener('click', function () {
+            const time = parseInt(this.getAttribute('data-time'), 10);
+            if (player && typeof player.seekTo === 'function') {
+              player.seekTo(time, true);
+              player.playVideo();
+
+              const video = document.getElementById("chatbot-video");
+              if (video) {
+                const yOffset = -80;
+                const y = video.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
+            }
+          });
+        });
+      }
+    }
+  });
 }
+
 
 // Add click events to timestamps
 document.addEventListener('DOMContentLoaded', () => {
