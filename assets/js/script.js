@@ -139,14 +139,22 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       const time = parseInt(this.getAttribute('data-time'), 10);
+  
       if (player && typeof player.seekTo === 'function') {
         player.seekTo(time, true);
         player.playVideo();
       } else {
-        // Optional fallback if API isn't ready
         const iframe = document.getElementById("chatbot-video");
         const base = "https://www.youtube.com/embed/NofI0hwgRxc";
         iframe.src = `${base}?enablejsapi=1&start=${time}&autoplay=1`;
+      }
+  
+      // 👇 Scroll to video after jumping to timestamp
+      const video = document.getElementById("chatbot-video");
+      if (video) {
+        const yOffset = -80;
+        const y = video.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
       }
     });
   });
