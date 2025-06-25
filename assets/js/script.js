@@ -159,3 +159,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// ------------------------------
+// YouTube-style Chapter Card Clicks
+// ------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const chapterCards = document.querySelectorAll('.chapter-card');
+
+  chapterCards.forEach(card => {
+    card.addEventListener('click', function () {
+      const time = parseInt(this.getAttribute('data-time'), 10);
+
+      if (player && typeof player.seekTo === 'function') {
+        player.seekTo(time, true);
+        player.playVideo();
+
+        const video = document.getElementById("chatbot-video");
+        if (video) {
+          const yOffset = -80;
+          const y = video.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+});
+
