@@ -1,3 +1,4 @@
+/* Base Styling */
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
@@ -40,7 +41,7 @@ body {
   text-align: center;
   padding: 150px 20px;
   position: relative;
-  margin-top: 80px; /* Offset for fixed navbar */
+  margin-top: 80px;
 }
 
 .hero-overlay {
@@ -52,6 +53,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .hero h1 {
@@ -154,24 +156,27 @@ body {
   margin-top: 40px;
   border-top: 1px solid #ddd;
 }
+
 #book-details h3 {
   margin-top: 30px;
 }
+
 #book-details ul {
   list-style: disc;
   padding-left: 20px;
 }
+
 .list-inline-item a {
   color: #007acc;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
+
 .list-inline-item a:hover {
   color: #005fa3;
   text-decoration: underline;
 }
-
 
 /* Testimonials Section */
 .testimonials-section {
@@ -227,9 +232,9 @@ body {
   animation: pulse 2.5s infinite ease-in-out;
   position: fixed;
   bottom: 20px;
-  right: 20px;     /* 🟢 Default to bottom-right */
-  left: auto;      /* 🔴 Make sure left is not interfering */
-  top: auto;       /* 🔴 Avoid auto-top shifts */
+  right: 20px;
+  left: auto;
+  top: auto;
   width: 64px;
   height: 64px;
   background: none;
@@ -333,9 +338,6 @@ footer .social-links a:hover .social-icon {
 [data-theme="dark"] footer {
   background-color: #111;
   color: #ccc;
-}
-.hero-content {
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .nav-link.active {
@@ -474,6 +476,7 @@ h1, h2, h3 {
   background: #222;
   color: #e0e0e0;
 }
+
 [data-theme="dark"] .chapter-time {
   color: var(--highlight);
 }
