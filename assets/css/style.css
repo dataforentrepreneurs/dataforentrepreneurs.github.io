@@ -97,6 +97,14 @@ body {
   color: #666;
 }
 
+.center-block {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional: centers vertically if height is set */
+  flex-direction: column; /* optional: stack children vertically */
+  text-align: center;     /* optional: center text inside */
+}
+
 /* About Section */
 .about-section {
   padding: 80px 20px;
