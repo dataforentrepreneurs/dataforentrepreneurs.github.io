@@ -471,7 +471,10 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-/* Dark theme override */
+.chapter-card.chapter-highlight {
+  background-color: #f0f7ff;
+}
+
 [data-theme="dark"] .chapter-card {
   background: #222;
   color: #e0e0e0;
@@ -479,6 +482,10 @@ h1, h2, h3 {
 
 [data-theme="dark"] .chapter-time {
   color: var(--highlight);
+}
+
+[data-theme="dark"] .chapter-card.chapter-highlight {
+  background-color: #003366;
 }
 
 /* End of Video clickable chapters */
