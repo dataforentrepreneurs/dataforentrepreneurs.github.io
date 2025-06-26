@@ -472,7 +472,8 @@ h1, h2, h3 {
 }
 
 .chapter-card.chapter-highlight {
-  background-color: #f0f7ff;
+  /* background-color: #f0f7ff; */
+  background-color: #fff8b3; /* soft yellow for light mode */
 }
 
 [data-theme="dark"] .chapter-card {
@@ -485,7 +486,8 @@ h1, h2, h3 {
 }
 
 [data-theme="dark"] .chapter-card.chapter-highlight {
-  background-color: #003366;
+  /* background-color: #003366; */
+  background-color: #665500; /* rich yellow for dark mode */
 }
 
 /* End of Video clickable chapters */
