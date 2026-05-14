@@ -61,42 +61,7 @@ function dragButtonTouch(e) {
   button.style.top = `${touch.clientY - touchStartY}px`;
 }
 
-// ------------------------------
-// Theme Toggle (Dark / Light)
-// ------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggle = document.createElement("button");
-  themeToggle.innerText = "🌓";
-  themeToggle.id = "theme-toggle";
-  themeToggle.title = "Toggle Dark / Light Mode";
-
-  Object.assign(themeToggle.style, {
-    position: "fixed",
-    top: "15px",
-    right: "15px",
-    padding: "8px 12px",
-    borderRadius: "20px",
-    backgroundColor: "#007acc",
-    color: "#fff",
-    border: "none",
-    zIndex: 9999,
-    cursor: "pointer"
-  });
-
-  document.body.appendChild(themeToggle);
-
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    document.documentElement.setAttribute("data-theme", savedTheme);
-  }
-
-  themeToggle.addEventListener("click", () => {
-    const current = document.documentElement.getAttribute("data-theme");
-    const next = current === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", next);
-    localStorage.setItem("theme", next);
-  });
-
   // Highlight active nav item
   const currentPath = window.location.pathname.split("/").pop();
   document.querySelectorAll(".nav-item a").forEach((link) => {

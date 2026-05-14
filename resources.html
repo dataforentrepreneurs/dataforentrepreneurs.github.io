@@ -84,22 +84,29 @@
   <br/>
   <br/>
   <br/>
-  <!-- Youtube Video Build AI Chatbot -->
-  <section class="py-5 book-section" id="build_ai_chatbot_at_no_invest">
-   <div class="container" id="build_ai_chatbot_at_no_invest">
-    <div class="section-header">
-     <h2>
-      Build a Pro-Level AI Chatbot at $0 Investment
-      <br>
-      with LLM, RAG &amp; FastAPI
-      <br>
-       Zero 3rd Party Dependency
-      </br>
-     </h2>
-     <p>
-      Watch a Step-by-Step Walkthrough
-     </p>
+  <!-- Featured Resources Accordion -->
+  <section class="py-5">
+   <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2 style="font-weight: 800;">Featured Resources</h2>
+      <p style="color: var(--text-muted);">Click on a resource to expand and view its details</p>
     </div>
+    <div class="accordion" id="resourcesAccordion">
+      <!-- Video -->
+      <div class="card glass-panel mb-4" style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+        <div class="card-header" id="headingVideo" style="border-bottom: none; background: transparent; padding: 0;">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseVideo" aria-expanded="true" aria-controls="collapseVideo" style="color: #fff; text-decoration: none; padding: 24px; width: 100%;">
+              <div style="font-size: 1.4rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center;">
+                <span>🎥 Build a Pro-Level AI Chatbot at $0 Investment</span>
+                <i class="fas fa-chevron-down" style="font-size: 1rem; color: var(--accent-purple);"></i>
+              </div>
+              <p style="font-size: 1rem; color: var(--text-muted); margin-top: 8px; margin-bottom: 0; font-weight: 400; white-space: normal;">Watch a step-by-step walkthrough on how to build your own chatbot from scratch with FastAPI and LLMs.</p>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseVideo" class="collapse show" aria-labelledby="headingVideo" data-parent="#resourcesAccordion">
+          <div class="card-body" style="border-top: 1px solid var(--border-glass); padding: 30px;">
 
     <div class="container">
       <!-- Video container will be initialized by YouTube API -->
@@ -309,12 +316,12 @@
 
     
     
-    <section class="video-details" style="padding: 60px 20px; background-color: #f9f9f9;">
+    <section class="video-details" style="padding: 60px 20px; background-color: transparent;">
      <div class="container" style="max-width: 960px; margin: 0 auto;">
    
        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1.5rem;">🚀 Build a Production-Ready AI Chatbot – Step-by-Step</h2>
    
-       <p style="font-size: 1.1rem; line-height: 1.7; color: #333;">
+       <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-main);">
          This video is your complete guide for designing, building, and deploying a production-ready AI chatbot using LLMs, RAG, FastAPI, Google Cloud Run, and React — all without third-party platforms or vendor lock-in.
          <br><br>
          Ideal for startup founders, data engineers, and AI enthusiasts who want full control over their chatbot stack.
@@ -370,20 +377,25 @@
       Watch on YouTube
      </a>
     </div>
-   </div>
-  </section>
-  <!-- End of Youtube Video Build AI Chatbot -->
-  <!-- Start of Book Content: AI Builders Chatbot-->
-  <section class="py-5 book-section">
-   <div class="container" id="build_ai_chatbot_book">
-    <div class="section-header">
-     <h2>
-      AI Chatbot Builder's Guide
-     </h2>
-     <p>
-      A Practical Playbook for Startups to Build Smart AI Chatbots
-     </p>
-    </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="card glass-panel mb-4" style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);" id="build_ai_chatbot_book">
+        <div class="card-header" id="headingBook2" style="border-bottom: none; background: transparent; padding: 0;">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseBook2" aria-expanded="false" aria-controls="collapseBook2" style="color: #fff; text-decoration: none; padding: 24px; width: 100%;">
+              <div style="font-size: 1.4rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center;">
+                <span>📚 AI Chatbot Builder's Guide</span>
+                <i class="fas fa-chevron-down" style="font-size: 1rem; color: var(--accent-purple);"></i>
+              </div>
+              <p style="font-size: 1rem; color: var(--text-muted); margin-top: 8px; margin-bottom: 0; font-weight: 400; white-space: normal;">A practical playbook for startups to build smart AI chatbots.</p>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseBook2" class="collapse" aria-labelledby="headingBook2" data-parent="#resourcesAccordion">
+          <div class="card-body" style="border-top: 1px solid var(--border-glass); padding: 30px;">
     <!-- Book Details -->
     <section class="py-5" id="book-details">
 
@@ -697,19 +709,25 @@
       </br>
      </ul>
     </div>
-   </div>
-  </section>
-  <!-- Book Content: Part 1 Basic Data Setup-->
-  <section class="py-5 book-section">
-   <div class="container" id="basic_data_setup_book">
-    <div class="section-header">
-     <h2>
-      Part 1: Basic Data Setup Guide
-     </h2>
-     <p>
-      A Compass for your Start-up
-     </p>
-    </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Book 1 -->
+      <div class="card glass-panel mb-4" style="background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);" id="basic_data_setup_book">
+        <div class="card-header" id="headingBook1" style="border-bottom: none; background: transparent; padding: 0;">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseBook1" aria-expanded="false" aria-controls="collapseBook1" style="color: #fff; text-decoration: none; padding: 24px; width: 100%;">
+              <div style="font-size: 1.4rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center;">
+                <span>📘 Part 1: Basic Data Setup Guide</span>
+                <i class="fas fa-chevron-down" style="font-size: 1rem; color: var(--accent-purple);"></i>
+              </div>
+              <p style="font-size: 1rem; color: var(--text-muted); margin-top: 8px; margin-bottom: 0; font-weight: 400; white-space: normal;">A compass for your start-up on building data pipelines, dashboards, and reporting.</p>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseBook1" class="collapse" aria-labelledby="headingBook1" data-parent="#resourcesAccordion">
+          <div class="card-body" style="border-top: 1px solid var(--border-glass); padding: 30px;">
     <!-- Book Details -->
     <section class="py-5" id="book-details">
 
@@ -1065,9 +1083,14 @@
       </li>
      </ul>
     </div>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- End of accordion -->
    </div>
   </section>
-  <!-- End of Book Content: Part 1 Basic Data Setup-->
+  <!-- End of Featured Resources Accordion -->
   <!-- Footer -->
   <footer>
    <div class="container">
